@@ -1,0 +1,213 @@
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.column_2 {
+  float: left;
+  width: 19%;
+  padding: 10px;
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 355px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+/*.flip-box-back {
+  background-color: transparent;
+  color: #ca7497;
+  transform: rotateY(180deg);
+}*/
+
+.flip-box-back {
+  background-image: url("image/pic.jpg");
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  color: #dcff93;
+  transform: rotateY(180deg);
+}
+
+.flip-box_2 {
+  background-color: transparent;
+  width: 260px;
+  height: 350px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box_2:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box_3 {
+  background-color: transparent;
+  width: 350px;
+  height: 265px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box_3:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box_4 {
+  background-color: transparent;
+  width: 240px;
+  height: 320px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box_4:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box_5 {
+  background-color: transparent;
+  width: 250px;
+  height: 440px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box_5:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+.flip-box-back_2 {
+  background-image: url("image/pic2.jpeg");
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  color: #f16d7a;
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back_2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-box-back_3 {
+  background-image: url("image/pic3.jpg");
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  color: #dcff93;
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back_3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-box-back_4 {
+  background-image: url("image/pic4.jpg");
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  color: #cb8e85;
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back_4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-box-back_5 {
+  background-image: url("image/pic5.jpg");
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  color: #ff8240;
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back_5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.letter {
+  background-image: url("image/paper.jpg");
+  background-repeat: no-repeat;
+  width: 1000px;
+  border: 1px solid #f1f1f1;
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  color: green;
+}
+
+
+
+
